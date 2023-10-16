@@ -1,3 +1,5 @@
+
+
 class Product {
   final String name;
   final String description;
@@ -12,5 +14,6 @@ class Product {
     items.add(Product("Tablet", "Tablet is the most useful device ever for meeting", 1500, "tablet.jpg"));
     items.add(Product("Pendrive", "Pendrive is useful storage medium",100, "pendrive.jpg"));
     items.add(Product("Floppy Drive", "Floppy drive is useful rescue storage medium", 20, "floppy.jpg"));
+    return items;
   }
 }

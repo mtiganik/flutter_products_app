@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_products_app/popup.dart';
 import 'package:flutter_products_app/product/products.dart';
 
 void main() {
@@ -16,7 +15,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData( primarySwatch: Colors.blue,),
       home: Scaffold(
         appBar: AppBar(title: const Text("Products listing")),
-        body: const PopUp(),
+        body: Products(title: "Item list"),
         )
     );
   }

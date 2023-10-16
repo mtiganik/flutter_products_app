@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class _RatingBox extends StatefulWidget {
-  const _RatingBox();
+class RatingBox extends StatefulWidget {
+  const RatingBox({super.key});
 
    @override 
-   _RatingBoxState createState() =>_RatingBoxState(); 
+   RatingBoxState createState() =>RatingBoxState(); 
 } 
 
-class _RatingBoxState extends State<_RatingBox> {
+class RatingBoxState extends State<RatingBox> {
    int _rating = 0; 
    void _setRatingAsOne() {
       setState(() {
@@ -37,7 +37,7 @@ class _RatingBoxState extends State<_RatingBox> {
          mainAxisSize: MainAxisSize.max, 
          children: <Widget>[
             Container(
-               padding: EdgeInsets.all(0), 
+               padding: const EdgeInsets.all(0), 
                child: IconButton(
                   icon: (
                      _rating >= 1? 
