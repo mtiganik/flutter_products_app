@@ -20,6 +20,33 @@ class MainApp extends StatelessWidget {
     );
   }
 }
+/*
+class MyApp extends StatefulWidget{
+  _MyAppState createState() => _MyAppState();
+}
 
+class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin{
+  Animation<double> animation;
+  AnimationController controller;
+  @override 
+  void initState(){
+    super.initState();
+    controller = AnimationController(
+      duration: const Duration(seconds: 10),
+      vsync: this
+      );
+    animation = Tween<double>(begin: 0.0, end: 1.0).animate(controller);
+    controller.forward();
+  }
 
-
+  @override
+  Widget build(BuildContext context){
+    controller.forward();
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(primarySwatch: Colors.blue,),
+      home: Products(title: "Product layout demo home page", animation: animation)
+    )
+  }
+}
+*/
